@@ -42,6 +42,7 @@ user_name = st.text_input("Enter your name")
 if user_name:
     st.subheader(f"Lucky Number Calculation for: `{user_name}`")
     steps, total, lucky_number = chaldean_lucky_number(user_name)
+    
 
     st.markdown("### 🔢 Calculation Steps")
     for step in steps:
@@ -49,3 +50,5 @@ if user_name:
 
     st.markdown(f"**Total Value:** `{total}`")
     st.markdown(f"🎯 **Lucky Number:** `{lucky_number}`")
+    if st.button("Send balloons!"):
+       st.balloons()
