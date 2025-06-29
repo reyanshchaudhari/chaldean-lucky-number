@@ -49,5 +49,3 @@ if user_name:
 
     st.markdown(f"**Total Value:** `{total}`")
     st.markdown(f"🎯 **Lucky Number:** `{lucky_number}`")
-    if st.button("Send balloons!"):
-    st.balloons()
